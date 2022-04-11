@@ -1,0 +1,135 @@
+.tree-demo-container{
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .leaf-node{
+    padding-left: 30px;
+  }
+  
+  
+  .example-tree-invisible {
+    display: none;
+  }
+  
+  .example-tree .mat-nested-tree-node .nested-node {
+    padding-left: 40px;
+  }
+  
+  .contents{
+    display: flex;
+    flex-direction: column  ;
+  }
+  .example-tree .nested-node > .mat-tree-node {
+    padding-left: 40px;
+  }
+  
+  .loadData{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    border-color: rgb(7, 7, 7);
+    color: white;
+    background-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+
+  
+  
+  .input{
+    margin-left: 2rem;
+    height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .deletBtn{
+    display: none;
+    width: 6rem;
+    height: 2rem;
+    border-color: rgb(248, 3, 3);
+    color: white;
+    background-color: rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+  .fileBtn{
+    display: none;
+    width: 6rem;
+    height: 2rem;
+    border-color: rgb(7, 7, 7);;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+  .folderBtn{
+    display: none;
+    width: 6rem;
+    height: 2rem;
+    border-color: rgb(7, 7, 7);;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+
+
+  .boom:hover > .fileBtn{
+    cursor: pointer;
+    display: inline;
+  }
+  .boom:hover > .folderBtn{
+   cursor: pointer;
+    display: inline; 
+  }
+  .boom:hover>.deletBtn{
+   cursor: pointer;
+    display: inline;
+  }
+  
+  /* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:29%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
